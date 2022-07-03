@@ -1,16 +1,16 @@
 import React, { useState } from "react";
 import { AiOutlineMinus, AiOutlinePlus } from "react-icons/ai";
-const Question = ({ id, title, info }) => {
+const Question = ({ title, info }) => {
   const [isInfo, setIsInfo] = useState(false);
 
-  const toggleInfo = function (id) {
+  const toggleInfo = function () {
     setIsInfo(!isInfo);
   };
   return (
     <article className="question">
       <header>
         <h4>{title}</h4>
-        <button className="btn" onClick={() => toggleInfo(id)}>
+        <button className="btn" onClick={toggleInfo}>
           {isInfo ? <AiOutlineMinus /> : <AiOutlinePlus />}
         </button>
       </header>
