@@ -15,9 +15,9 @@
 # Features implemented :
 
 - Project Setup
-- Render Review component
-- Display only one Review component with setting state as index
-- Function to move to prev , next or random review
+- Render Question component
+- Display question info conditionally
+- Display question icon conditionally
 
 # This project is Live <a href="">Here</a> ! Enjoy .
 
